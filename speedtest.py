@@ -9,7 +9,7 @@ s = speedtest.Speedtest()
 
 try:
     s.get_servers(servers)
-except:
+except Exception:
     s.get_closest_servers()
     s.get_best_server()
 
